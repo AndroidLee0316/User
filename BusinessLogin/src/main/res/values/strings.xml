@@ -1,0 +1,56 @@
+<resources>
+    <string name="user_input_phone_number">请输入手机号</string>
+    <string name="user_error_phone">手机号格式错误</string>
+    <string name="login_user_kicked">该账号已在其他设备登录\n请重新登录</string>
+    <string name="login_not_register">手机号未注册</string>
+    <string name="login_not_register_tip">请使用短信验证登录即注册</string>
+    <string name="login_no_account">账号不存在</string>
+    <string name="login_no_pwd">未设置密码</string>
+    <string name="login_no_pwd_tip">请使用短信验证登录</string>
+    <string name="login_pwd_error_many_times_title">密码登录异常</string>
+    <string name="login_pwd_error_many_times_content">密码连续输错，为了您的账号安全\n请尝试短信登录</string>
+    <string name="user_input_sms_code">请输入验证码</string>
+    <string name="user_verify_code_wrong">验证码格式错误</string>
+    <string name="login_input_account_tip">为保障您的信息安全，请先输入您的账户信息</string>
+    <string name="user_third_login_no_wechat">未安装微信，请使用其他方式登录</string>
+    <string name="user_account_verify">为了保证你的账号安全，请验证身份</string>
+    <string name="user_third_bind">第三方账号绑定</string>
+    <string name="user_title_set_pwd">密码设置</string>
+    <string name="user_pwd_contains_rule">必须包含大写字母、小写字母和数字</string>
+    <string name="user_pwd_rule">密码8-32位字符；必须包含大写字母、小写字母和数字</string>
+    <string name="user_pwd_format_error">密码格式错误</string>
+    <string name="user_login_phone_tip">未注册手机号将自动保存为平台账号</string>
+    <string name="user_login_agree">同意</string>
+    <string name="user_login_privacy">《隐私协议》</string>
+    <string name="user_fast_bind_no_name">你好，亲爱的用户</string>
+    <string name="user_third_bind_confirm">绑定</string>
+    <string name="user_fast_bind_account_content">根据《中华人民共和国网络安全法》要求，使用信息发布、即时通讯等互联网服务需进行身份信息验证。为保障您的使用体验，请进行手机号绑定验证，感谢您的理解和支持。</string>
+    <string name="user_privacy_agreement_split">、</string>
+    <string name="user_register_sz_server">《服务协议》</string>
+    <string name="user_input_password">请输入密码</string>
+    <string name="user_login">登录</string>
+    <string name="user_logining">登录中...</string>
+    <string name="user_login_success">登录成功</string>
+    <string name="login_qq">QQ登录</string>
+    <string name="login_wechat">微信登录</string>
+    <string name="login_alipay">支付宝登录</string>
+    <string name="user_login_method_swith">切换登录方式</string>
+    <string name="user_login_account_swith">切换账号</string>
+    <string name="user_register_agree_server">登录即表示同意</string>
+    <string name="user_auth_failed">授权失败</string>
+
+    <string name="user_input_phone_number_hint"><font size="16">请输入手机号</font></string>
+    <string name="pasc_user_bind_account_ing">账号绑定中</string>
+    <string name="pasc_user_bind_phone_success">手机绑定成功</string>
+    <string name="login_user_invalid">你的登录信息已失效，请重新登录</string>
+    <string name="login_user_invalid_title">下线通知</string>
+    <string name="login_user_invalid_close">我知道了</string>
+    <string name="user_login_unregister">帐户注销</string>
+    <string name="login_code_unreceived">收不到验证码？</string>
+    <string name="login_mobile_code_hint">请选择无法获取验证码原因</string>
+    <string name="login_phone_functional">手机号正常使用</string>
+    <string name="login_phone_not_functional">手机号无法使用</string>
+    <string name="login_certification_title">账号是否实名</string>
+    <string name="login_certification_hint">目前自助找回账号仅支持找回已实名的账号</string>
+    <string name="login_certificated">我已实名</string>
+</resources>

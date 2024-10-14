@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:paddingLeft="15dp"
+        android:paddingTop="22dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="22dp">
+
+        <ImageView
+            android:id="@+id/user_iv_face_vertify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cert_ic_face_verify" />
+
+        <LinearLayout
+            android:id="@+id/user_ll_scan_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/user_iv_face_vertify">
+
+            <TextView
+                android:id="@+id/user_tv_scan_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_scan_face_cert"
+                android:textColor="@color/black_333333"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/user_tv_face_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_6"
+                android:paddingTop="@dimen/dp_1.0"
+                android:paddingRight="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_1.0"
+                android:textSize="@dimen/text_size_10"
+                app:rv_cornerRadius="10dp"
+                app:rv_backgroundColor="@color/cert_face_bg"
+                tools:text="未认证"
+                android:textColor="@color/cert_face_text" />
+
+            <TextView
+                android:id="@+id/user_tv_scan_face_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_recommend"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="-9dp"
+                android:background="@drawable/userbase_bg_cert_recommend"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_tv_face_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_ll_scan_face"
+            android:layout_alignEnd="@id/view_pos"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/user_iv_face_vertify"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/user_scan_face_cert_subTitle"
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/text_size_13" />
+
+        <View
+            android:id="@+id/view_pos"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginRight="@dimen/dp_2"
+            android:layout_toLeftOf="@id/user_activity_certiChoose_tvFaceUnCerti" />
+
+        <TextView
+            android:id="@+id/user_activity_certiChoose_tvFaceUnCerti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_toLeftOf="@id/user_img_face_right_arrow"
+            android:text="未认证"
+            android:textColor="#C7C7C7"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:id="@+id/user_img_face_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

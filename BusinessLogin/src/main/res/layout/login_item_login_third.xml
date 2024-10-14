@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/user_clickView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white_ffffff"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/user_margin_15"
+        android:paddingLeft="@dimen/user_margin_10"
+        android:paddingRight="@dimen/user_margin_10"
+        android:paddingTop="@dimen/user_margin_15">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/user_third_img_size"
+            android:layout_height="@dimen/user_third_img_size" />
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_margin_5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black_2e332f"
+            android:textSize="@dimen/user_text_size_12"
+            tools:text="违章" />
+
+    </LinearLayout>
+</FrameLayout>

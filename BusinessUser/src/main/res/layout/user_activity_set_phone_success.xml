@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_account_change_phone_bg"
+    android:orientation="vertical">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_ctv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/user_bind_phone"
+        app:titleColor="@color/black_333333"
+        app:titleSize="@dimen/text_size_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/user_accout_calce_ture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="@string/user_phone_set_success"
+            android:textColor="@color/black_333333"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:textSize="@dimen/text_size_18" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_btn_commit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/userbase_button_bg"
+        android:text="@string/user_back_countdown"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+
+
+</LinearLayout>

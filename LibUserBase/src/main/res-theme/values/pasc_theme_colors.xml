@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--获取验证码按钮的disable颜色-->
+    <color name="user_verify_code_disable_color">#9BD7FF</color>
+</resources>

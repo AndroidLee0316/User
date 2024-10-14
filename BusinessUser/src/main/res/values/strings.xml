@@ -1,0 +1,59 @@
+<resources>
+    <string name="user_face_setting">人脸设置</string>
+    <string name="user_unbind_success">解绑成功</string>
+    <string name="user_bind_success">绑定成功</string>
+    <string name="user_change_phone_btn">更换手机号</string>
+    <string name="user_change_phone_title">更换手机号</string>
+    <string name="user_old_phone_num">旧手机号</string>
+    <string name="user_new_phone_num">新手机号</string>
+    <string name="user_set_phone_title">手机号设置</string>
+    <string name="user_change_phone_himt">更换手机后，下次登录仅可使用新手机登录</string>
+    <string name="user_change_phone_next">下一步</string>
+    <string name="user_change_phone_error_dialog_des">该手机号已绑定其他账号\n无法重复绑定</string>
+    <string name="user_change_phone_error_dialog_btn">我知道了</string>
+    <string name="user_change_phone_error_dialog_phone">新手机号码与原号码一致</string>
+    <string name="user_change_phone_send_sms_himt">发送验证码至更换的手机号</string>
+    <string name="user_change_phone_sms_commit">提交</string>
+    <string name="user_change_phone_input_himt">为了保障您的账号安全，变更重要信息需要身份验证，请补充当前手机号码中间四位。</string>
+    <string name="user_change_phone_btm">验证手机号</string>
+    <string name="user_account_phone_set">手机号设置</string>
+    <string name="user_account_fingerprint_set">解锁设置</string>
+    <string name="user_account_fingerprint_set_hint">设置指纹/手势密码锁/面容保护隐私</string>
+    <string name="user_account_calce">账号注销</string>
+    <string name="user_account_calce_himt">我已知悉并接受以上账号注销的说明</string>
+    <string name="user_account_calce_commit">提交注销申请</string>
+    <string name="user_account_calce_calce">我再想想</string>
+    <string name="user_account_calce_error">注销无法完成</string>
+    <string name="user_account_calce_reason">由于以下原因，暂时无法注销账号</string>
+    <string name="user_account_calce_pay_error">支付功能尚未注销</string>
+    <string name="user_account_calce_pay_error_himt">请先注销支付功能，再申请注销账号</string>
+    <string name="user_account_calce_success">已成功提交注销申请</string>
+    <string name="user_account_calce_send_sms_hint">为了保证你的账号安全，请验证身份</string>
+    <string name="user_account_calce_sure">确认注销</string>
+    <string name="user_face_check_failed_not_cert">账号未实名认证，请先实名认证</string>
+    <string name="user_face_check_failed">人脸核验失败，请重试</string>
+
+    <string name="user_account_exchange_success">更换成功</string>
+    <string name="user_account_vcode_send_failed">验证码发送失败</string>
+    <string name="user_account_vcode_send_success">验证码发送成功</string>
+    <string name="user_account_vcode_error">短信验证码错误，请重试</string>
+
+    <string name="user_account_calce_btn_sure">确认</string>
+    <string name="user_account_calce_face_error">提交申请失败</string>
+    <string name="user_account_calce_face_error_himt">人脸比对未通过，请确保为本人操作</string>
+    <string name="user_account_cancel_success_hint">您的账号（%s）已成功提交注销申请，60天内不再进行登录操作，账号将自动注销。若您在60天内使用该账号重新登录，注销申请将自动失效，需重新提交。</string>
+
+    <string name="user_retry">重试</string>
+    <string name="user_back">返回</string>
+    <string name="user_account_certification">验证账号</string>
+    <string name="user_account_certification_hint">请填写您的实名信息以证明是本人操作</string>
+    <string name="user_real_name_hint">请填写真实姓名</string>
+    <string name="user_id_hint">请填写身份证号</string>
+    <string name="user_face_hint">即将开始认脸认证</string>
+  <string name="user_new_phone_title">新手机号码</string>
+    <string name="user_new_phone_hint">绑定后，下次仅能使用新手机号登录</string>
+    <string name="user_phone_verify">手机验证</string>
+    <string name="user_bind_phone">绑定手机</string>
+    <string name="user_phone_set_success">新手机绑定成功</string>
+    <string name="user_back_countdown">返回（%d秒）</string>
+</resources>

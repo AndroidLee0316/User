@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasc.business.user">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application>
+        <activity
+            android:name=".activity.AccountSecurityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity android:name=".activity.PhoneSetActivity" />
+        <activity android:name=".activity.SendSmsActivity" />
+        <activity android:name=".activity.InputPhoneActivity" />
+        <activity android:name=".activity.ChangePhoneActivity" />
+        <activity android:name=".activity.AccoutCalcePayErrorActivity" />
+        <activity android:name=".activity.AccoutCalceActivity" />
+        <activity android:name=".activity.AccoutCalcePaySuccessActivity" />
+        <activity android:name=".activity.AccoutCalceErrorActivity" />
+        <activity
+            android:name=".activity.AccountCertificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NewPhoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SendNewSmsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SetPhoneSuccessActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>

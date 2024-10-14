@@ -1,0 +1,35 @@
+ {
+  "faceConfig": {
+    "needAlipayFaceCheck": true
+  },
+  "certificationConfig": {
+    "needBankCert": false,
+    "needPAFaceCert": true,
+    "needAlipayFaceCert": false,
+    "certFaceNewWay":false,
+    "certWarningType":2,
+    "certRecommend":1,
+    "alipayReturnJumpUrl":""
+  },
+  "loginConfig": {
+    "agreementUrl": "https://smt-stg.yun.city.pingan.com/basic/stg/app/feature/provision/?uiparams=%7B%22title%22:%22%22%7D#/detail",
+    "agreementText": "《服务协议》",
+    "privacyUrl": "https://smt-stg.yun.city.pingan.com/basic/stg/app/feature/provision/?uiparams=%7B%22title%22:%22%22%7D#/detail",
+    "privacyText": "《隐私协议》",
+    "agreementLocation":0,
+    "serviceSelectType":0,
+    "supportWeChat": true,
+    "supportQQ": true,
+    "supportAlipay": true
+  },
+  "otherConfig": {
+    "needCertMenu": true,
+    "needPasswordSetting":true,
+    "needFaceSetting":true,
+    "needChangePhoneNum":true,
+    "needAccountCancel":true,
+    "accoutCancelHintUrl":"file:///android_asset/html/account_cancel.htm",
+    "accoutCancelPayUrl":"http://smt-stg.yun.city.pingan.com/basic/stg2/app/feature/account-cancel/#/detail",
+    "mobileFunctionalUrl": "https://app.bestzhuhai.com.cn/jimu/195/"
+  }
+}

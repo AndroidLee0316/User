@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:onClick="testView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnFaceCertiCountActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FaceCertiCount(人脸认证可用次数)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnBankCertiCountActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BankCertiCount(银行卡认证可用次数)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnAccountSecurityActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AccountSecurityActivity(账号安全校验)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnUserInfoUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="userInfoUpdate"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnGetUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getUserInfo"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnBankCertiActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BankCertiActivity(银行卡认证界面)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnBankCertiActivityAfterFace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BankCertiActivity(银行卡认证界面人脸认证完成)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnCertificationCompletelyActivity0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CertificationCompletelyActivity(银行卡认证短信确认界面)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnCertificationCompletelyActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CertificationCompletelyActivity(银行卡认证短信确认界面)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnChooseCertificationActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ChooseCertiActivity(实名认证)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnMeProfileActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MeProfileActivity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnNewLoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NewLoginActivity(登录界面)"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/test_btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(退出登录)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnScanFaceCertiActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ScanFaceCertiActivity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnFaceCompareActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FaceCompareActivity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnCardCertifyConfirmActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CardCertifyConfirmActivity(银行卡认证确认界面)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnCertifySuccActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CertifySuccActivity(认证成功)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnCertifyFail1Activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CertiFailActivity(认证失败还剩0次)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnCertifyFail2Activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CertiFailActivity(认证失败还剩多次)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnProxyTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProxyTest"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnLoadingDialogShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载对话框展示"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnLoadingDialogHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载对话框隐藏"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/test_btnDaTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="update操作测试"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/face_ic_compare_bottom"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ffffff"
+    tools:context=".activity.LoginSwitchActivity"
+    android:id="@+id/login_activity_login_switch_root">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.pasc.lib.userbase.base.view.CommonTitleView
+            android:id="@+id/user_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftIcon="@drawable/login_ic_close" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/user_riv_head"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_30"
+            android:src="@drawable/login_ic_head_portrait"
+            app:riv_corner_radius="44dp"
+            app:riv_mutate_background="true" />
+
+        <TextView
+            android:id="@+id/user_tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="+86 13888888888"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/sp_18" />
+
+        <Button
+            android:id="@+id/user_rtv_face_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_80"
+            android:background="@drawable/userbase_button_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/user_face_login"
+            android:textColor="@color/white_ffffff"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/user_tv_login_method_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/user_login_method_swith"
+            android:textColor="@color/gray_5f5f5f"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_tv_account_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/user_login_account_swith"
+            android:textColor="@color/gray_5f5f5f"
+            android:textSize="@dimen/sp_16" />
+
+        <include
+            android:id="@+id/login_activity_login_switch_privacy"
+            layout="@layout/login_include_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</RelativeLayout>

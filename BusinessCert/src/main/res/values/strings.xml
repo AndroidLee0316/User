@@ -1,0 +1,53 @@
+<resources>
+    <string name="user_cert">实名认证</string>
+    <string name="user_alipay_cert">支付宝人脸认证</string>
+    <string name="user_bank_cert">银行卡认证</string>
+    <string name="user_scan_face_cert">人脸认证</string>
+    <string name="user_input_real_name">请输入您的真实信息，认证通过后将不能修改</string>
+    <string name="user_real_name">真实姓名</string>
+    <string name="user_please_input_real_name">请输入姓名</string>
+    <string name="user_identify_card">身份证号</string>
+    <string name="user_please_input_identify">请输入身份证号</string>
+    <string name="user_bank_card">银行卡号</string>
+    <string name="user_please_input_bank_num">请输入银行卡号</string>
+    <string name="user_bank_leave_num">预留手机号</string>
+    <string name="user_please_input_bank_leave_num">请输入银行预留手机号码</string>
+    <string name="user_next">下一步</string>
+    <string name="user_bank_certification_record">银行卡验证</string>
+    <string name="user_bank_cert_subTitle">查询个人信用</string>
+    <string name="user_verification_code_send">验证码将发送至</string>
+    <string name="user_register_phone_verification_code">请输入验证码</string>
+    <string name="user_scan_face_cert_subTitle">办理电子卡证、享受更多政务服务</string>
+    <string name="user_certification_success">认证成功</string>
+    <string name="user_un_install_alipay">请先安装支付宝客户端</string>
+    <string name="user_certify_failed_back">返回</string>
+    <string name="user_unknow_error">系统未知异常</string>
+    <string name="user_default_certify_error_msg">请核对您的姓名和身份证号</string>
+    <string name="user_no_auth_count_msg">今日还有%1$d次认证机会, 请明日再试</string>
+    <string name="user_auth_count_msg">今日还有%1$d次认证机会</string>
+    <string name="user_idcard_used_warning">该身份信息已绑定其他账号,\n是否绑定为当前账号?</string>
+
+    <string name="user_iknow">我知道了</string>
+    <string name="user_certed">已认证</string>
+    <string name="user_uncert">未认证</string>
+    <string name="user_recommend">推荐</string>
+    <string name="user_bank_cert_desc">通过银行卡信息完成实名认证</string>
+    <string name="user_app_face_cert">APP人脸认证</string>
+    <string name="user_app_face_cert_desc">使用APP身份认证系统认证</string>
+    <string name="user_alipay_cert_desc">使用支付宝身份认证系统认证</string>
+    <string name="user_face_cert_desc">使用人脸认证系统认证</string>
+
+    <string name="user_cert_agreement_pre">已阅读并同意</string>
+    <string name="user_cert_agreement">《认证协议》</string>
+    <string name="user_cert_agreement_url">https://smt-stg.yun.city.pingan.com/basic/stg/app/feature/provision/?uiparams=%7B%22title%22:%22%22%7D#/detail</string>
+    <string name="user_cert_agreement_warning_type_default">平台</string>
+    <string name="user_cert_agreement_warning_type_bank">金融壹账通</string>
+    <string name="user_cert_agreement_warning_type_face_pa">平安科技</string>
+    <string name="user_cert_agreement_warning_type_face_alipay">支付宝</string>
+    <string name="user_cert_bank_agreement_hint_warning">* 您的银行卡信息仅用于%s提供的实名认证</string>
+    <string name="user_cert_face_agreement_hint_warning">* 您的身份信息仅用于%s提供的实名认证</string>
+    <string name="user_cert_bank_agreement_warning">您即将使用银行卡实名核验服务，录入的银行卡信息将用于%s的身份核验，平台保证您所提交的信息是安全的</string>
+    <string name="user_cert_face_agreement_warning">您即将使用人脸实名核验服务，录入的人脸信息将用于%s的身份核验，平台保证您所提交的信息是安全的</string>
+    <string name="user_cert_agreement_warning">您即将使用实名认证服务，录入的信息将用于%s的身份核验，平台保证您所提交的信息是安全的。</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_account_change_phone_bg"
+    android:orientation="vertical">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_ctv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/user_set_phone_title"
+        app:titleColor="@color/black_333333"
+        app:titleSize="@dimen/text_size_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="41dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_account_chage_phone"/>
+        <TextView
+            android:id="@+id/user_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/text_size_17" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="更换后，下次登录仅可使用新手机号登录"
+            android:textColor="@color/gray_999999"
+            android:layout_marginBottom="30dp"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/user_change_phone_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/userbase_button_bg"
+        android:text="@string/user_change_phone_btn"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+
+
+</LinearLayout>

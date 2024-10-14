@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white_ffffff">
+
+  <TextView
+      android:id="@+id/user_tv_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:paddingTop="15dp"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
+      android:textColor="@color/black_030303"
+      android:textSize="@dimen/text_size_17"
+      tools:text="未设置密码"/>
+
+  <TextView
+      android:id="@+id/user_tv_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:paddingTop="15dp"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
+      android:textColor="@color/black_333333"
+      android:textSize="@dimen/text_size_13"
+      tools:text="解绑后将无法使用该账号登录，确认要解绑吗？"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:background="@color/gray_8d8d8d"
+      android:layout_marginTop="10dp"
+      android:layout_height="0.5px"/>
+
+
+  <TextView
+      android:id="@+id/user_sure"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginBottom="10dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/userbase_selector_button_common"
+      android:text="@string/user_confirm"
+      android:textColor="@color/pasc_primary"
+      android:textSize="@dimen/text_size_17"
+      style="?android:attr/borderlessButtonStyle"
+      />
+
+</LinearLayout>

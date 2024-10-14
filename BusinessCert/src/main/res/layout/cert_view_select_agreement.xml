@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/pasc_cert_view_select_agreement_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/single_unselect" />
+
+        <TextView
+            android:id="@+id/pasc_cert_view_select_agreement_title_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/user_cert_agreement_pre"
+            android:textColor="@color/pasc_secondary_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/pasc_cert_view_select_agreement_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/user_cert_agreement"
+            android:textColor="@color/pasc_primary"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/pasc_cert_view_select_agreement_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:gravity="center"
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/text_size_13"
+            android:visibility="gone"/>
+
+</LinearLayout>

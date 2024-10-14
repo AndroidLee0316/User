@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--扫脸认证-真实姓名字体颜色-->
+    <color name="user_certify_scanCertify_realNameColor">#2e332f</color>
+    <!--扫脸认证-身份证号字体颜色-->
+    <color name="user_certify_scanCertify_idNumColor">#2e332f</color>
+    <!--扫脸认证-当前账号认证次数小于0弹出对话框时确认按钮颜色-->
+    <color name="user_certify_chooseCertify_dialog_confirmButtonColor">#27A5F9</color>
+    <!--扫脸认证-当前账号认证次数小于0弹出对话框时内容的颜色-->
+    <color name="user_certify_chooseCertify_dialog_contentColor">#333333</color>
+    <!--银行卡认证-刷入提示字体颜色-->
+    <color name="user_certify_bankCertify_remindColor">#8D8D8D</color>
+    <color name="user_black_999999">#999999</color>
+    <color name="C_EAF7FF">#EAF7FF</color>
+
+    <!--标题和状态栏颜色-->
+    <color name="title_bar">@color/white_ffffff</color>
+    <!--界面默认背景色-->
+    <color name="default_bg">@color/gray_f4f4f4</color>
+</resources>

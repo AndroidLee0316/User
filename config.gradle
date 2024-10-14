@@ -1,0 +1,72 @@
+ext {
+    baseAppId = 'com.pingan.smt.template'
+    betaAppId = "${baseAppId}"
+    grayAppId = "${baseAppId}"
+    pwdConfigSys = '!er*F908**&$fhjiofds+_9('
+
+    kotlin_version = '1.2.41'
+    dbflow_version = '4.2.4'
+    build_tool_version = '30.0.3'
+    min_sdk_version =21
+    target_sdk_version = 30
+    compile_sdk_version = 30
+    support_lib_version = '27.1.1'
+
+    retrofit2_version = '2.4.0'
+    eventBusVersion = "3.1.1"
+    arouterCompiler = '1.2.0'
+    version_name = "1.0.0"
+    version_code = 100
+
+    if (isRelease == 'false') {
+        MAVEN_URL = 'http://maven.paic.com.cn/repository/maven-public'
+        //打包的时候注意下有没有修改User表，修改了的话一定要记得升级
+
+        aarUserOutVersion = '0.0.20-SNAPSHOT'
+
+        aarUserBaseVersion = '0.0.36-SNAPSHOT'
+        aarBusinessCertVersion = '0.0.33-SNAPSHOT'
+        aarBusinessCertAlipayVersion = '0.0.33-SNAPSHOT'
+        aarBusinessFaceVersion = '0.0.36-SNAPSHOT'
+        aarBusinessLoginVersion = '0.0.41-SNAPSHOT'
+        aarLibLoginAlipayVersion = '0.0.32-SNAPSHOT'
+        aarLibLoginQQVersion = '0.0.32-SNAPSHOT'
+        aarLibLoginWechatVersion = '0.0.32-SNAPSHOT'
+
+        aarBusinessUserVersion = '0.0.54-SNAPSHOT'
+
+        aarLibFaceOld = "1.0.0"
+
+    } else {
+        MAVEN_URL = 'http://maven.paic.com.cn/repository/maven-public'
+        //打包的时候注意下有没有修改User表，修改了的话一定要记得升级
+        aarUserOutVersion = '1.0.70'
+
+        aarUserBaseVersion = '1.0.70'
+        aarBusinessCertVersion = '1.0.70'
+        aarBusinessCertAlipayVersion = '1.0.70'
+        aarBusinessFaceVersion = '1.0.70'
+        aarBusinessLoginVersion = '1.0.70'
+        aarLibLoginAlipayVersion = '1.0.70'
+        aarLibLoginQQVersion = '1.0.70'
+        aarLibLoginWechatVersion = '1.0.70'
+        aarBusinessUserVersion = '1.0.70'
+
+        aarLibFaceOld = "1.0.0"
+
+    }
+
+    aarWidgetVersion = '1.2.7'
+    aarLibHybrid = '1.2.0'
+    aarLibBaseVersion = '1.3.0'
+    aarLibStatisticsVersion = '1.1.7'
+    aarImageLoaderVersion = '1.0.7'
+    aarRouterVersion = '1.2.1'
+    aarLibStorageVersion = '1.1.0'
+    aarLibShareVersion = '2.1.3'
+    aarNetVersion = '1.3.1'
+    aarkeyboardVersion = '1.0.11'
+    aarLibAlipay = '1.0.0'
+
+    aarLibFaceNormal = '1.0.3'
+}

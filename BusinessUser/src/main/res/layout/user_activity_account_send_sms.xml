@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_account_change_phone_bg"
+    android:orientation="vertical">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_ctv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/user_change_phone_title"
+        app:titleColor="@color/black_333333"
+        app:titleSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/user_activity_account_send_sms_hint_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/user_change_phone_send_sms_himt"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/text_size_13" />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/text_size_16"/>
+    <RelativeLayout
+        android:id="@+id/user_rl_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white_ffffff"
+        android:layout_marginTop="14dp">
+
+        <com.pasc.lib.userbase.base.view.FormatEditText
+            android:id="@+id/user_et_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginRight="@dimen/user_margin_20"
+            android:layout_toLeftOf="@+id/user_tv_get_verify_code"
+            android:background="@null"
+            android:hint="@string/user_input_sms_code"
+            android:inputType="number"
+            android:maxLength="7"
+            android:maxLines="1"
+            android:textColor="@color/black_2e332f"
+            android:textColorHint="@color/gray_c7c7c7"
+            android:textCursorDrawable="@drawable/login_et_cursor"
+            android:textSize="@dimen/user_text_size_16" />
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/user_login_text_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/user_margin_16"
+            android:layout_toLeftOf="@id/user_tv_get_verify_code"
+            android:layout_toStartOf="@id/user_tv_get_verify_code"
+            android:background="@color/gray_dddddd"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/user_tv_get_verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="1.0"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/user_get_code"
+            android:textColor="@color/pasc_primary"
+            android:textSize="@dimen/user_text_size_16" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/user_commit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/userbase_button_bg"
+        android:text="@string/user_change_phone_sms_commit"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+{
+  "faceConfig": {
+  },
+  "certificationConfig": {
+    "needBankCert": true,
+    "needPAFaceCert": true,
+    "needAlipayFaceCert": true,
+    "certFaceNewWay": true
+  },
+  "loginConfig": {
+    "agreementUrl": "https://smt-stg.yun.city.pingan.com/basic/stg/app/feature/provision/?uiparams=%7B%22title%22:%22%22%7D#/detail",
+    "agreementText": "《服务协议》",
+    "privacyUrl": "https://smt-stg.yun.city.pingan.com/basic/stg/app/feature/provision/?uiparams=%7B%22title%22:%22%22%7D#/detail",
+    "privacyText": "《隐私协议》",
+    "supportWeChat": true,
+    "supportQQ": true,
+    "supportAlipay": true
+  },
+  "otherConfig": {
+    "needCertMenu": true,
+    "needFaceSetting": true,
+    "accoutCalceHimtUrl":"http://smt-stg.yun.city.pingan.com/yancheng/stg/app/feature/account-cancel/#/signing",
+    "accoutCalcePayUrl":"http://smt-stg.yun.city.pingan.com/yancheng/stg/app/feature/account-cancel/#/detail"
+  }
+}

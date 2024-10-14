@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_account_change_phone_bg"
+    android:orientation="vertical">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_ctv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/user_account_calce"
+        app:titleColor="@color/black_333333"
+        app:titleSize="@dimen/text_size_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/user_accout_calce_ture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/user_account_calce_success"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_himt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/text_size_13"
+            android:text="@string/user_account_cancel_success_hint"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_commit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/userbase_button_bg"
+        android:text="@string/user_account_calce_btn_sure"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+
+
+</LinearLayout>

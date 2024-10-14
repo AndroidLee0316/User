@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/face_check_common_bg_color"
+    android:orientation="vertical">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/face_check_title"
+        app:titleSize="@dimen/text_size_18" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/face_check_header_color"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/face_ic_face_open_status"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="41dp"/>
+
+        <TextView
+            android:id="@+id/face_activity_face_check_prepare_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/face_check_hint"
+            android:textColor="@color/face_check_himt_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/face_activity_face_check_prepare_begin_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/userbase_button_bg"
+        android:text="@string/face_check_begin"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+
+
+</LinearLayout>

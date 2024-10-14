@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_e8e8e8"
+    android:gravity="end"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:background="@color/white_ffffff"
+        android:gravity="center"
+        android:text="@string/user_sms_login"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tv_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_0.5"
+        android:background="@color/white_ffffff"
+        android:gravity="center"
+        android:text="@string/user_pwd_login"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tv_wx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_0.5"
+        android:background="@color/white_ffffff"
+        android:gravity="center"
+        android:text="@string/login_wechat"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_0.5"
+        android:background="@color/white_ffffff"
+        android:gravity="center"
+        android:text="@string/login_qq"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tv_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_0.5"
+        android:background="@color/white_ffffff"
+        android:gravity="center"
+        android:text="@string/login_alipay"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_6"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_18" />
+
+</LinearLayout>

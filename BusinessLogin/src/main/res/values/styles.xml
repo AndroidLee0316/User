@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="user_tip_pwd_rule">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">#999999</item>
+    <item name="android:textSize">@dimen/sp_13</item>
+  </style>
+
+</resources>

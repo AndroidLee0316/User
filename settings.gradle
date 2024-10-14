@@ -1,0 +1,6 @@
+include ':LibPALiveDetect'
+include  ':LibUserOut'
+include ':LibUserBase', ':BusinessFace', ':BusinessLogin', ':LibLogin_qq', ':LibLogin_wechat', ':LibLogin_alipay', ':BusinessCert'
+include 'BusinessUser', ':BusinessCert_alipay','app'
+//include 'LibFace_old','BusinessFace'
+include 'LibFace_fix'

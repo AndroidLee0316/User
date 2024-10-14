@@ -1,0 +1,203 @@
+import java.util.concurrent.TimeUnit
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'AndResGuard'
+apply from: '../util.gradle'
+
+
+def BETA_HOST = '"http://smt-stg1.yun.city.pingan.com"';
+
+def DEBUG_HOST = '"http://smt-stg1.yun.city.pingan.com"';
+
+
+android {
+
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "${baseAppId}"
+        minSdkVersion rootProject.ext.min_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        versionCode rootProject.ext.version_code
+        versionName rootProject.ext.version_name
+        flavorDimensions "business"
+        buildConfigField "boolean", "PRODUCT_MODE", "true"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi-v7a", 'arm64-v8a'
+        }
+        multiDexEnabled true
+        /**
+         * ARouter 路由配置
+         */
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+    }
+
+    //娜迦加固后的so必须配置该选项，不然会出现 dynamic section has invalid link(0) sh_type: 0 (expected SHT_STRTAB)
+    packagingOptions {
+        doNotStrip "*/arm64-v8a/*.so"
+        doNotStrip "*/armeabi-v7a/*.so"
+        doNotStrip "*/armeabi/*.so"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            //      jniLibs.srcDir 'libs'
+            res.srcDirs = ['src/main/res',
+                           'src/main/res-accumulation']
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('smt.jks')
+            storePassword "pingan@smt"
+            keyAlias "smt"
+            keyPassword "pingan@smt"
+            v2SigningEnabled true
+        }
+        debug {
+            storeFile file('smt.jks')
+            storePassword "pingan@smt"
+            keyAlias "smt"
+            keyPassword "pingan@smt"
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            manifestPlaceholders = ["act_export": false]
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = ["act_export": true]
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/notice.txt'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    dexOptions {
+        jumboMode true
+    }
+
+    flavorDimensions 'packageType'
+    productFlavors {
+        product {
+            applicationId = "${baseAppId}"
+            resValue "string", "app_name", "用户系统"
+            buildConfigField "boolean", "PRODUCT_MODE", "true"
+            buildConfigField "String", "HOST", DEBUG_HOST
+            dimension 'packageType'
+        }
+
+        beta {
+//            applicationId "com.pasc.moban"
+            applicationId = "${betaAppId}"
+            resValue "string", "app_name", "用户系统"
+            buildConfigField "boolean", "PRODUCT_MODE", "false"
+            buildConfigField "String", "HOST", BETA_HOST
+            dimension 'packageType'
+        }
+
+        dev {
+//            applicationId "com.pasc.moban"
+            applicationId = "${betaAppId}"
+            resValue "string", "app_name", "用户系统"
+            buildConfigField "boolean", "PRODUCT_MODE", "false"
+            buildConfigField "String", "HOST", DEBUG_HOST
+            dimension 'packageType'
+        }
+
+        yancheng {
+            applicationId "com.pingan.yancheng"
+            resValue "string", "app_name", "用户系统"
+            buildConfigField "boolean", "PRODUCT_MODE", "false"
+            buildConfigField "String", "HOST", '"http://ycsc-smt-dev.yun.city.pingan.com"'
+            dimension 'packageType'
+        }
+
+    }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor(0, TimeUnit.SECONDS);
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '27.1.1' //默认使用的版本
+                }
+            }
+            if (requested.group == 'com.pasc.lib') {
+                if (requested.name == 'router') {
+                    details.useVersion rootProject.ext.aarRouterVersion//默认使用的版本
+                } else if (requested.name == 'base') {
+                    details.useVersion rootProject.ext.aarLibBaseVersion//默认使用的版本
+                } else if (requested.name == 'imageloader') {
+                    details.useVersion rootProject.ext.aarImageLoaderVersion//默认使用的版本
+                }
+            }
+
+        }
+    }
+
+
+    repositories {
+        flatDir {
+            dirs '../BusinessLogin/libs'
+            dirs '../BusinessLogin_alipay/libs'
+            dirs '../BusinessCert_zm/libs'
+            dirs 'libs'
+        }
+    }
+
+    buildToolsVersion '30.0.3'
+}
+
+
+dependencies {
+    api "com.android.support:support-v4:${support_lib_version}"
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support:multidex:1.0.3"
+    if (isMavenBuild == 'false') {
+        api project(':BusinessUser')
+        api project(':LibUserBase')
+    } else {
+        api "com.zxs.business:BusinessUser:1.0.0"
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+}

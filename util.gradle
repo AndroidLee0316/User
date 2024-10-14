@@ -1,0 +1,46 @@
+import javax.crypto.Cipher
+import javax.crypto.SecretKeyFactory
+import javax.crypto.spec.DESedeKeySpec
+import javax.crypto.spec.IvParameterSpec
+import java.security.MessageDigest
+
+//对客户端密码做加密
+static def encryptClientCerPwd(String pkgName, String pwd) {
+  def reverse = pkgName.reverse()
+  def builder = new StringBuilder()
+  for (int index = 0; index < pkgName.length(); index++) {
+    builder.append(pkgName.charAt(index)).
+        append(reverse.charAt(index)).
+        append(Character.toChars(33 + index))
+  }
+  pkgName = builder.toString()
+  encryptBytes(pkgName, pwd.getBytes('utf-8'))
+}
+
+private static String encryptBytes(String key, byte[] src) {
+  def digest = MessageDigest.getInstance("MD5")
+  digest.update(key.getBytes("utf-8"), 0, key.length())
+  String result = new BigInteger(1, digest.digest()).toString(16).padLeft(32, '0')
+  def spec = new DESedeKeySpec(result.getBytes("UTF-8"))
+  def keyFactory = SecretKeyFactory.getInstance("DESede")
+  def secret = keyFactory.generateSecret(spec)
+  def cipher = Cipher.getInstance("DESede/CBC/PKCS5Padding")
+  cipher.init(Cipher.ENCRYPT_MODE, secret,new IvParameterSpec(new byte[8]))
+  def doFinal = cipher.doFinal(src)
+  return new String(Base64.encoder.encode(doFinal))
+}
+
+static def encryptConfigFile(String path, File target,String pwd) {
+  if (path == null || !path.endsWith('.json')) {
+    return
+  }
+  def file = new File(path)
+  if (!file.exists()) return
+  def result = encryptBytes(pwd, file.readBytes())
+  GFileUtils.writeFile(result,target)
+}
+
+ext {
+  encryptClientCerPwd = this.&encryptClientCerPwd
+  encryptConfigFile = this.&encryptConfigFile
+}

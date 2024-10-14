@@ -1,0 +1,15 @@
+<resources>
+    <string name="user_cancel">取消</string>
+    <string name="user_confirm">确定</string>
+    <string name="user_exit">退出</string>
+    <string name="user_retry">重试</string>
+    <string name="user_sms_login">短信登录</string>
+    <string name="user_pwd_login">密码登录</string>
+    <string name="user_face_login">人脸登录</string>
+    <string name="user_get_code">获取验证码</string>
+    <string name="user_code_sending">发送中</string>
+    <string name="user_code_sent">已发送</string>
+    <string name="user_resend_code_login">%ds后重试</string>
+    <string name="user_get_code_again">重新获取</string>
+    <string name="user_temp_network_unavailable">当前网络异常，请检查一下</string>
+</resources>

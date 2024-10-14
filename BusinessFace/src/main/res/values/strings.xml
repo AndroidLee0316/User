@@ -1,0 +1,56 @@
+<resources>
+    <string name="user_login_fail_face_title">人脸登录失败</string>
+    <string name="user_login_fail_face_title_timeout">人脸登录超时</string>
+    <string name="user_login_fail_face_timeout">人脸正对手机，更容易登录成功</string>
+    <string name="face_cert_timeout_title">人脸认证超时</string>
+    <string name="face_cert_timeout_content">人脸正对手机，更容易设置成功</string>
+    <string name="user_login_fail_face_many_times">失败次数过多，请尝试其他方式登录</string>
+    <string name="user_login_face_off_tip">关闭人脸登录后，需要重新录入\n确定关闭？</string>
+    <string name="user_face_setting">人脸设置</string>
+    <string name="user_login_open_face">开启人脸登录</string>
+    <string name="user_face_opened">人脸登录已开启</string>
+    <string name="user_face_unopen">人脸登录未开启</string>
+    <string name="user_account_verify">为了保证你的账号安全，请验证身份</string>
+    <string name="user_reset_fail_face_title_timeout">人脸重置超时</string>
+    <string name="user_reset_fail">人脸重置失败</string>
+    <string name="user_register_fail">开通人脸失败</string>
+    <string name="user_i_know">我知道了</string>
+
+    <string name="face_check_title">人脸核验</string>
+    <string name="face_check_hint">当前服务需要进行刷脸核验\n请确保为%s本人操作</string>
+    <string name="face_check_begin">开始核验</string>
+    <string name="face_check_failed">识别失败</string>
+    <string name="face_check_failed_hint">请重新识别完成认证</string>
+    <string name="face_check_failed_other_method">选择其他人脸识别方式</string>
+    <string name="face_check_failed_more_then_five">您今日已人脸识别失败5次，请明日再试</string>
+    <string name="face_return">返回</string>
+
+    <string name="face_cert_title">人脸认证</string>
+    <string name="face_cert_exit_tips">退出后将重新进行身份验证，是否确认离开？</string>
+    <string name="face_login_replace_tips">已存在人脸信息，是否覆盖</string>
+    <string name="face_login_replace">覆盖</string>
+    <string name="face_login_open_tips">实名认证成功，是否开通人脸登录</string>
+    <string name="face_login_open">开通</string>
+
+    <string name="user_use_face_default">登录时默认使用人脸验证</string>
+    <string name="face_check_dialog_btn">我知道了</string>
+    <string name="face_check_dialog_hint">您今日人脸识别失败次数过多，请明日再试</string>
+    <string name="face_check_apli">支付宝人脸识别</string>
+    <string name="face_check_compare">平台人脸识别</string>
+    <string name="face_check">人脸识别</string>
+    <string name="face_check_reset">重置人脸</string>
+    <string name="face_check_no_apli">请先安装支付宝客户端</string>
+    <string name="face_chech_timeout_content">人脸正对手机，更容易识别成功</string>
+
+
+    <string name="face_check_accout_title">账户注销</string>
+    <string name="face_check_accout_failmsg">提交申请失败</string>
+    <string name="face_check_accout_error_reason">人脸比对未通过，请确保为本人操作</string>
+
+    <string name="face_check_change_phone_title">更换手机号</string>
+    <string name="face_check_change_phone_failmsg">更换手机号失败</string>
+    <string name="face_check_change_phone_error_reason">人脸比对未通过，请确保为本人操作</string>
+    <string name="face_detect_hint">请确保为账号本人操作\n您的人脸信息仅用于身份识别</string>
+    <string name="face_identify_hint">请确保为账号本人操作\n您的人脸信息仅用于身份识别</string>
+    <string name="face_identify_info_hint">请确保为账号本人操作</string>
+</resources>

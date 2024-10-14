@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_frame_layout_face"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_ffffff">
+
+        <FrameLayout
+            android:id="@+id/user_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/user_imageview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/face_ic_face_identify"
+            app:layout_constraintBottom_toBottomOf="@id/user_frameLayout"
+            app:layout_constraintLeft_toLeftOf="@id/user_frameLayout"
+            app:layout_constraintRight_toRightOf="@id/user_frameLayout"
+            app:layout_constraintTop_toTopOf="@id/user_frameLayout" />
+
+        <com.pasc.lib.widget.FaceCircleProcessView
+            android:id="@+id/cpv_face"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:fcpv_circle_color="#00000000"
+            app:layout_constraintLeft_toLeftOf="@id/user_imageview"
+            app:layout_constraintRight_toRightOf="@id/user_imageview"
+            app:layout_constraintTop_toTopOf="@id/user_imageview"
+            app:fcpv_radius="@dimen/dp_115"
+            app:fcpv_ring_bg_color="@color/face_fcpv_ring_bg_color"
+            app:fcpv_stroke_width="@dimen/dp_4" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/cpv_face"
+            app:layout_constraintLeft_toLeftOf="@id/cpv_face"
+            app:layout_constraintRight_toRightOf="@id/cpv_face"
+            app:layout_constraintTop_toTopOf="@id/cpv_face" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_tv_face_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_title_bar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="95dp"
+        android:text="请将人脸正对置于框内"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/text_size_22" />
+
+    <TextView
+        android:id="@+id/user_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/blue_27a5f9"
+        android:textSize="@dimen/text_size_20"
+        android:visibility="gone"
+        tools:text="12s" />
+
+    <ImageView
+        android:id="@+id/iv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/face_ic_compare_bottom"/>
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:lineSpacingExtra="4dp"
+        android:layout_gravity="center|bottom"
+        android:text="@string/face_identify_hint"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/sp_13" />
+
+
+</FrameLayout>

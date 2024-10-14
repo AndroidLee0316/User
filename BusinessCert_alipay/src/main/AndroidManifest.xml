@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pasc.business.cert.zm" >
+
+    <application>
+        <activity
+            android:name=".ZMCertivicationActivity"
+            android:exported="false"
+            android:theme="@style/AppBaseDialog"
+            android:launchMode="singleTask">
+            <!--<intent-filter >-->
+            <!--<action android:name="android.intent.action.VIEW"></action>-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--<data android:scheme="smt" android:host="com.pingan.smt"></data>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ZMScanFaceCertificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+    </application>
+</manifest>

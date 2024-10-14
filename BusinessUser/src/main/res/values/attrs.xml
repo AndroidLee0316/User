@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="user_code_edittext">
+        <attr name="user_codeTextColor" format="color"/>
+        <attr name="user_codeTextSize" format="dimension"/>
+        <attr name="user_codeTextBackgroud" format="reference" />
+        <attr name="user_codeCursorImg" format="reference"/>
+        <attr name="user_codeCursorHeight" format="dimension"/>
+    </declare-styleable>
+
+</resources>

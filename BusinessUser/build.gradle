@@ -1,0 +1,86 @@
+apply plugin: 'com.android.library'
+apply from: 'uploadArchives.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.compile_sdk_version
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.min_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        versionCode rootProject.ext.version_code
+        versionName rootProject.ext.version_name
+
+        /**
+         * ARouter 路由配置
+         */
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = ["act_export": false]
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = ["act_export": true]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    resourcePrefix "user_"
+
+    sourceSets {
+        main {
+            res.srcDirs += "src/main/res-theme"
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs '../BusinessLogin/libs'
+            dirs '../BusinessLogin_alipay/libs'
+            dirs '../BusinessCert_zm/libs'
+            dirs 'libs'
+        }
+    }
+
+
+    buildToolsVersion '30.0.3'
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    if (isMavenBuild == 'false') {
+        api project(':LibUserBase')
+        api project(':BusinessCert')
+        api project(':BusinessCert_alipay')
+        api project(':BusinessFace')
+        api project(':BusinessLogin')
+        api project(':LibLogin_alipay')
+        api project(':LibLogin_qq')
+        api project(':LibLogin_wechat')
+        api project(':LibUserOut')
+    } else {
+        api "com.zxs.lib:userbase:1.0.0"
+        api "com.zxs.business:BusinessFace:1.0.0"
+        api "com.zxs.business:BusinessLogin:1.0.0"
+        api "com.zxs.business:BusinessCert:1.0.0"
+        api "com.zxs.business:BusinessCert_alipay:1.0.0"
+        api "com.zxs.lib:LibLogin_qq:1.0.0"
+        api "com.zxs.lib:LibLogin_wx:1.0.0"
+        api "com.zxs.lib:LibLogin_alipay:1.0.0"
+        api "com.zxs.lib:userout:1.0.0"
+    }
+    annotationProcessor "com.alibaba:arouter-compiler:${rootProject.ext.arouterCompiler}"
+    api 'com.github.AndroidLee0316:router:support_1.0.0'
+}

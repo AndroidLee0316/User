@@ -1,0 +1,74 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasc.business.face" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+
+        <activity
+            android:name=".activity.AccountVerifyActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceCompareActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceCompareSuccActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceCheckPrepareActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceCheckFailActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceCheckActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceDetectInputActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceDetectInputSuccessActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceDetectLoginActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.LoginByFaceSwitchActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceDetectResetActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceDetectResetSuccessActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.FaceInfoCheckActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+    </application>
+</manifest>

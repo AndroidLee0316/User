@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasc.business.login">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+
+        <activity
+            android:name=".activity.ForgetPWDActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+
+        <!-- 重设密码 -->
+        <activity
+            android:name=".activity.ResetPWDActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+
+        <activity
+            android:name=".activity.ResetPWDSuccessActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NewLoginActivity"
+            android:exported="${act_export}"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
+        <activity
+            android:name=".activity.LoginSwitchActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FastBindAccountActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pingan.smt.template.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>

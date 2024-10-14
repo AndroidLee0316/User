@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--认证失败返回按钮的颜色(剩余次数不为0)-->
+    <color name="user_certifyFail_tvColor_return_more">#27a5f9</color>
+    <!--认证失败返回按钮的颜色(剩余次数为0)-->
+    <color name="user_certifyFail_tvColor_return_nomore">#ffffff</color>
+    <!--认证失败剩余次数的颜色-->
+    <color name="user_certifyFail_tvColor_authAccount">#27a5f9</color>
+    <!--认证失败剩余次数的颜色-->
+    <color name="user_certify_dialog_confirm_tvColor">#27a5f9</color>
+
+    <!--app内"确认"按钮颜色其实是统一的-->
+    <color name="user_dialog_confirm_textColor">@color/blue_27a5f9</color>
+    <color name="user_dialog_cancel_textColor">@color/black_666666</color>
+    <color name="user_button_next_bgColor">@color/blue_27a5f9</color>
+</resources>

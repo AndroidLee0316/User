@@ -1,0 +1,6 @@
+外部如果需要获取用户模块的数据, 传入指定的key值, 如果当前要调用的方法对应的key值不存在, 需要与用户模块接口人进行协商规定新的key值;
+目前已经匹配的key-method:
+{
+    ["key": "/user/get/getCertifyType",  "method": "getCertifyType"(获取认证类型)],
+    ["key": "/user/get/getToken",        "method": "getToken"()],
+}

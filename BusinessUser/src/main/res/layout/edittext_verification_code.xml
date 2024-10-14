@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFF"
+    android:padding="5dp"
+    tools:ignore="ResourceName">
+
+    <!-- 1像素的接近于不显示，真正的验证码输入框 -->
+    <EditText
+        android:id="@+id/user_edit_codeNum"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:maxLength="4"
+        android:inputType="number"
+       />
+
+    <LinearLayout
+        android:id="@+id/user_ll_codeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/user_tuser_code0"
+                style="@style/user_code_tv" />
+            <ImageView
+                android:id="@+id/user_img_code0"
+                android:src="@drawable/ic_arrow_right"
+                style="@style/user_cursor" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_tuser_code1"
+                style="@style/user_code_tv"/>
+
+            <ImageView
+                android:id="@+id/user_img_code1"
+                style="@style/user_cursor"/>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/user_tuser_code2"
+                style="@style/user_code_tv"/>
+
+            <ImageView
+                android:id="@+id/user_img_code2"
+                style="@style/user_cursor"/>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_tuser_code3"
+                style="@style/user_code_tv"/>
+
+            <ImageView
+                android:id="@+id/user_img_code3"
+                style="@style/user_cursor"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

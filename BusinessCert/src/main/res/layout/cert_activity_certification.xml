@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/user_ctv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/user_bank_cert" />
+
+    <TextView
+        android:id="@+id/user_tv_input_real_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_ctv_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_input_real_name"
+        android:textColor="@color/user_certify_bankCertify_remindColor"
+        android:textSize="@dimen/text_size_13" />
+
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_tv_input_real_name"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_tv_realname"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/user_real_name"
+                android:textColor="@color/black_2e332f"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.pasc.lib.widget.ClearEditText
+                android:id="@+id/user_activity_bankCerti_etRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_29"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@null"
+                android:hint="@string/user_please_input_real_name"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:textColor="@color/black_2e332f"
+                android:textColorHint="@color/gray_c7c7c7"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/user_view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@color/gray_dddddd" />
+
+        <LinearLayout
+            android:id="@+id/ll_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_tv_identify"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="@string/user_identify_card"
+                android:textColor="@color/black_2e332f"
+                android:textSize="16sp" />
+
+            <com.pasc.lib.userbase.base.view.FormatEditText
+                android:id="@+id/user_activity_bankCerti_etIdNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_29"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:hint="@string/user_please_input_identify"
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColor="@color/black_2e332f"
+                android:textColorHint="@color/gray_c7c7c7"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/user_view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@color/gray_dddddd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_tv_bank_card"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/user_bank_card"
+                android:textColor="@color/black_2e332f"
+                android:textSize="16sp" />
+
+            <com.pasc.lib.userbase.base.view.FormatEditText
+                android:id="@+id/user_activity_bankCerti_etBankNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_29"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:hint="@string/user_please_input_bank_num"
+                android:inputType="number"
+                android:maxLength="23"
+                android:textColor="@color/black_2e332f"
+                android:textColorHint="@color/gray_c7c7c7"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/user_view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@color/gray_dddddd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_tv_bank_leave_num"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/user_bank_leave_num"
+                android:textColor="@color/black_2e332f"
+                android:textSize="16sp" />
+
+            <com.pasc.lib.userbase.base.view.FormatEditText
+                android:id="@+id/user_activity_bankCerti_etMobileNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_29"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:hint="@string/user_please_input_bank_leave_num"
+                android:inputType="number"
+                android:maxLength="13"
+                android:textColor="@color/black_2e332f"
+                android:textColorHint="@color/gray_c7c7c7"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.pasc.business.cert.view.CertSelectAgreementView
+        android:id="@+id/user_activity_bankCerti_csav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_layout"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/user_tv_certification_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/user_activity_bankCerti_csav"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="@dimen/dp_15"
+        android:alpha="0.3"
+        android:background="@drawable/userbase_button_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/user_next"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+
+</RelativeLayout>

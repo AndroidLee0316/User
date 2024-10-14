@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--实名认证 人脸认证 字体颜色-->
+    <color name="cert_face_text">#27a5f9</color>
+    <color name="cert_face_bg">#e7f5ff</color>
+
+    <!--实名认证 银行卡认证 字体颜色-->
+    <color name="cert_bank_text">#FF8F0E</color>
+    <color name="cert_bank_bg">#FFE9D0</color>
+</resources>

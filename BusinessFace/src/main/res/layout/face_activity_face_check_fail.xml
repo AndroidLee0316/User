@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/face_check_common_bg_color"
+    android:orientation="vertical">
+
+    <com.pasc.lib.userbase.base.view.CommonTitleView
+        android:id="@+id/face_activity_face_check_fail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        app:leftIconVisibility="true"
+        app:title="@string/face_check_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_e0e0e0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/face_activity_face_check_fail_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_41"
+            android:src="@drawable/cert_ic_certify_fail" />
+
+        <TextView
+            android:id="@+id/face_activity_face_check_fail_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/face_activity_face_check_fail_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/face_check_failed"
+            android:textColor="@color/pasc_primary_text"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/face_activity_face_check_fail_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/face_activity_face_check_fail_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center_horizontal"
+            android:text="@string/face_check_failed_hint"
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/text_size_15" />
+        <TextView
+            android:id="@+id/face_activity_face_check_id_reTy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/face_check_btn_fail"
+            android:gravity="center"
+            android:text="@string/user_retry"
+            android:textColor="@color/face_check_btn_text"
+            android:textSize="@dimen/text_size_17"
+            android:layout_below="@id/face_activity_face_check_fail_hint" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/face_activity_face_check_fail_retry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/face_check_btn_fail"
+        android:gravity="center"
+        android:text="@string/user_retry"
+        android:textColor="@color/face_check_btn_text"
+        android:textSize="@dimen/text_size_17"
+        android:layout_below="@id/face_activity_face_check_fail_hint" />
+
+    <TextView
+        android:id="@+id/text_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pasc_primary"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/text_size_17"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="返回"
+        android:gravity="center"
+       />
+    <TextView
+        android:id="@+id/text_reset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:textColor="@color/pasc_primary"
+        android:textSize="@dimen/text_size_17"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="@string/face_check_reset"/>
+
+    <TextView
+        android:id="@+id/text_select"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:textColor="@color/face_check_himt_color"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/face_check_failed_other_method"/>
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:background="@color/white_ffffff"
+        android:orientation="horizontal"
+        android:layout_height="52dp">
+        <ImageView
+            android:id="@+id/face_check_selecr_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/cert_ic_face_verify" />
+
+        <TextView
+            android:id="@+id/face_check_selecr_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_below="@id/face_activity_face_check_fail_icon"
+            android:layout_centerHorizontal="true"
+            android:text="平台人脸识别"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/face_check_select_text"
+            android:textSize="@dimen/text_size_15"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/face_check_arrow_right" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <com.pasc.lib.userbase.base.view.CommonTitleView
+            android:id="@+id/user_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftIconVisibility="false"
+            app:title="@string/user_pwd_login"
+            app:titleSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/user_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_50"
+            app:srcCompat="@drawable/login_ic_reset_pwd_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:gravity="center_horizontal"
+            android:text="密码设置成功"
+            android:textColor="@color/black_2E332F"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_btn_done"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/userbase_button_bg"
+        android:text="完成 (3s)"
+        android:textColor="@color/white_ffffff"
+        android:textSize="@dimen/text_size_17" />
+</LinearLayout>

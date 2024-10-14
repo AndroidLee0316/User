@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasc.business.cert">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+
+        <activity
+            android:name=".activity.ICardCertifyActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.CertificationCompletelyActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.IChooseCertificationActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.IChooseCertificationNewActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.IChooseCertificationFaceListActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.ScanFaceCertificationActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.CertifySuccActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+        <activity
+            android:name=".activity.CertifyFailActivity"
+            android:exported="${act_export}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"/>
+    </application>
+</manifest>
